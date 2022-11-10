@@ -1,5 +1,5 @@
 # IICTPracticeProjectWebsite
-This is simple static website which I developed as my practice in my first semister in "IICT" course using html, css, javascript and bootstrap
+This is simple static website which I developed as my practice in my first semester in "IICT" course using html, css, javascript and bootstrap
 
 ![1](https://user-images.githubusercontent.com/113015136/201087391-f10e9cca-66bf-4c67-a405-4394a54fc1b4.PNG)
 ![2](https://user-images.githubusercontent.com/113015136/201087405-c481d870-29ff-4d73-9107-d301b1ffccea.PNG)
