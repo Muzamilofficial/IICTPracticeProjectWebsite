@@ -1,0 +1,388 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: sans-serif;
+}
+/* The Styling Of Slider */
+
+.slider {
+  margin-top: 10px;
+  margin-left: 200px;
+  max-width: 1000px;
+  height: 300px;
+  position: relative;
+}
+.slide1,.slide2,.slide3{ 
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide1 {
+  background: url(ahsan.png)no-repeat center;
+  background-size: cover;
+  animation:fade 10s infinite;
+  -webkit-animation:fade 10s infinite;
+
+} 
+.slide2 {
+  background: url(ahsan2.png)no-repeat center;
+  background-size: cover;
+  animation:fade2 10s infinite;
+  -webkit-animation:fade2 10s infinite;
+}
+.slide3 {
+    background: url(ahsan3.png)no-repeat center;
+    background-size: cover;
+    animation:fade3 10s infinite;
+   -webkit-animation:fade3 10s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
+
+/* Now This Is The Styling Of Main Heading Of This Page*/
+
+.career-heading{
+  text-align: center;
+  font-size: 35px;
+  color: rgb(68, 68, 68);
+  margin-top: 20px;
+  font-weight: bold;
+}
+.career-heading-span{
+  font-size: 20px;
+  color:  #008000;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.career-heading-span:hover{
+  color: #0000FF;
+}
+
+/* This Is The Styling Of Image Under Header */
+
+.main-pics{
+	margin-left: 440px;
+	margin-top: 20px;
+}
+
+/* Styling Of Socail Media Icons*/
+
+.socail-icons{
+	display: flex;
+	margin-left: 535px;
+}
+.socail-icons ul{
+	display: flex;
+}
+.socail-icons ul li{
+	width: 50px;
+	height: 50px;
+	margin: 3px;
+	list-style: none;
+	border: 2px solid #2e86de;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.socail-icons ul li i{
+	color: #2e86de;
+}
+.socail-icons ul li:before{
+	content: '';
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	background: #2e86de;
+	border-radius: 50%;
+    transition: all 0.3s linear;
+    z-index: -1;
+    opacity: 0;
+
+}
+.socail-icons ul li:hover:before{
+	transform: scale(0.8);
+	opacity: 1;
+}
+.socail-icons ul li:hover i{
+	color: white;
+}
+
+/* Main Content Of Page Starts Now*/
+
+.main-content{
+	margin-left: 150px;
+	margin-top: 20px;
+	width: 80%;
+}
+.dawn-span{
+	font-weight: bold;
+	font-size: 25px;
+}
+.dawn-para{
+	display: block;
+	font-size: 19px;
+}
+.dawnsub-heading{
+	font-weight: bold;
+	font-size: 25px;
+}
+.dot{
+	font-weight: bold;
+	display: block;
+	float: left;
+	padding-right: 10px;
+	margin-top: -13px;
+	font-size: 30px;
+	color:  #dd4b39;
+}
+.between{
+	margin-left: 18px;
+}
+.dot2{	
+	font-weight: bold;
+	display: block;
+	float: left;
+	padding-right: 10px;
+	margin-top: -13px;
+	font-size: 30px;
+	color:  blue;
+}
+.link{
+	font-weight: bold;
+	text-decoration: none;
+	color: #222222;
+	transition: 0.1s ease;
+}
+.link:hover{
+	border-bottom: solid 2px;
+}
+.table1{
+	margin-left: 45px;
+}
+.final-heading{
+	padding: 15px 0px;
+	font-size: 35px;
+	text-decoration: none;
+	color: #000000;
+	margin-left: 150px;
+	transition: 0.5s;
+	border-radius: 10px;
+}
+.final-heading:hover{
+	color: #fff;
+	background: #000;
+}
+
+/* Here Is The Footer Of This Page*/
+
+.footer{
+	font-family: sans-serif;
+	margin-top: 30px;
+	height: 370px;
+	width: 100%;
+	background: #BBE4FB;
+	color: #002244;
+}
+.left{
+	float: left;
+	width: 25%;
+}
+.side{
+    color: #002244;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+    margin-left: 60px;
+}
+.left ul li{
+	list-style: none;
+	padding: 25px;
+	margin: 0px 40px;
+}
+.left a{
+	position: absolute;
+	text-decoration: none;
+	display: block;
+	color: #000;
+}
+.left a:hover{
+	border-bottom: 2px solid;
+}
+.middle-left{
+	width: 25%;
+	float: left;
+}
+.middle-left ul li{
+	list-style: none;
+	padding: 25px;
+	margin: 0px 30px;
+}
+.middle-left a{
+	position: absolute;
+	text-decoration: none;
+	display: block;
+	color: #000;
+}
+.middle-left a:hover{
+	border-bottom: 2px solid;
+}
+.middle-right{
+	float: left;
+	width: 25%;
+}
+.middle-right ul li{
+	list-style: none;
+	padding: 25px;
+	margin: 0px 40px;
+}
+.middle-right a{
+	position: absolute;
+	text-decoration: none;
+	display: block;
+	color: #000;
+}
+.middle-right a:hover{
+	border-bottom: 2px solid;
+}
+.right{
+	width: 25%;
+	float: left;
+}
+.container{
+	float: left;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.container .boxes{
+	text-align: center;
+	margin-top: 20px;
+	left: 10%;
+}
+.container .box .icon .fa{
+	font-size: 80px;
+	cursor: pointer;
+}
+.container .boxes .icons h3,
+.container .boxes .icons h4{
+	position: relative;
+	overflow: hidden;
+	font-weight: 400;
+	margin: 0;
+	padding: 2px 5px;
+	font-size: 14px;
+	transition-delay: 0.3333s;
+	color: transparent;
+}
+.container .boxes .icons h4{
+	font-weight: 600;
+	margin: 5px 0;
+	font-style: 30px;
+}
+.container .boxes .icons h3:before,
+.container .boxes .icons h4:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	background: #00bcd4;
+	transition: 1s;
+}
+.container .boxes .fa:hover ~ h3,
+.container .boxes .fa:hover ~ h4{
+	color: #000;
+}
+.container .boxes .icon h4:before{
+	left: initial;
+	right: 100%;
+	background: #9c27b0;
+}
+.container .boxes .fa:hover ~ h3:before{
+	left: -100%;
+}
+.container .boxes .fa:hover ~  h4:before{
+	left: initial;
+	right: -100%;
+}
+.duhs{
+	padding: 20px 0px;
+}
+.duhs a{
+	position: absolute;
+	text-decoration: none;
+	color: #002244;
+	display: block;
+	font-weight: bold;
+	transition: 0.1s;
+}
+.duhs a:hover{
+	border-bottom: 2px solid;
+}
+.span{
+	font-weight: bold;
+	display: block;
+	padding: 10px 0px;
+}
+.end{
+	background: #002244;
+	height: 40px;
+	width: 100%;
+}
+.end header{
+	padding: 10px 0px;
+	font-size: 17px;
+	letter-spacing: 0.2rem;
+	color: #ffffff;
+	text-align: center;
+}
+.end{
+	color: #ffffff;
+}
+
+/* Career Sub Page Styling*/
+
+/* Main Heading Styling*/
+
+.main-heading{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 35px;
+	font-weight: bold;
+}
+.main-para{
+	margin-left: 50px;
+	font-size: 25px;
+}
+.submain-heading{
+	font-size: 35px;
+	font-weight: bold;
+}
+.mk{
+	font-weight: bold;
+}

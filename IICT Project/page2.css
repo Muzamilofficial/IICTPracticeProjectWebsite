@@ -1,0 +1,563 @@
+body {
+ margin: 0;
+ padding: 0;
+ height: 260vh;
+ font-family: 'PT Sans Narrow', sans-serif;
+ background-color: #000;
+ border-bottom:  1px solid white;
+ letter-spacing: 2px;
+ font-size: 25px;
+}
+
+ /* cursor: none; */
+
+
+::-webkit-scrollbar {
+ display: none;
+}
+header
+{
+  background-image: url(bar.jpg);
+  height: 550vh;
+  position: relative;
+      width: 100%;
+
+}
+.open {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ pointer-events: none;
+ z-index: 10000;
+}
+
+.open .layer {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ transform-origin: top;
+ animation: open 1s ease-in-out forwards;
+}
+
+.open .layer:nth-child(1) {
+ background: #fff;
+ z-index: 2;
+}
+.open .layer:nth-child(2) {
+ background: maroon;
+ z-index: 1;
+ animation-delay: 1s; 
+}
+
+@keyframes open {
+ 0% {
+  transform:scaleX(1);
+ }
+
+ 100% {
+  transform: scaleX(0);
+}
+}
+
+
+ul
+{
+  margin-top: 10px;
+  padding: 0px;
+  display: flex;
+  float: right;
+  word-spacing: 2px;
+  font-size: 25px;
+  letter-spacing: 2px;
+
+
+}
+ul li
+{
+  list-style: none;
+  margin: 0 50px;
+  transition: 0.5s;
+}
+ul li a
+{
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding: 5px;
+ font-family: "candara" , sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #000;
+  transition: 0.5s;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+ul:hover li a
+{
+  transform: scale(1);
+  opacity: .2;
+  filter: blur(5);
+  height: 80%;
+
+
+}
+ul li a:hover{
+  transform: scale(1.5);
+  opacity: 1;
+  filter: blur(0);
+  border:transparent;
+
+
+}
+ul li a:before
+{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 90%;
+  width: 96%;z
+  transition:transform 2s;
+  transform: scaleX(0);
+  z-index: -1;
+}
+ul li a:hover:before
+{
+  transition:transform 0.8s;
+  transform-origin: left;
+  transform: scaleX(1);
+  transform: scaleY(0.8);
+  background-color: #d63031;
+}
+
+.Explore-section{
+    height: 100vh;
+    display: flex;
+    margin-top: 100px;
+    width: 95%;
+}
+
+.tech{
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: .8s;
+}
+
+.tech:hover{
+    flex: 5;
+}
+
+.tech-pic{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: grayscale(80%);
+    transition: .3s;
+}
+
+.tech:hover .tech-pic{
+    filter: grayscale(0);
+}
+
+.tech-info{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: .2s;
+}
+
+.tech:hover .tech-info{
+    opacity: 1;
+    bottom: 60px;
+    transition-delay: .6s;
+}
+
+.tech-info h2{
+    font-size: 30px;
+    color: #ffa;
+    font-weight: 700;
+    opacity: 100%;
+    font-weight: 700;
+}
+
+.tech-info p{
+    color: #c0392b;
+    opacity: 100%;
+    margin-top: 8px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.socialmedia a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #333;
+    background-color: #b8e994;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0 6px;
+    font-size: 18px;
+    transition: .3s linear;
+}
+
+.socialmedia a:hover{
+    color: #b8e994;
+    background-color: transparent;
+    transform: scale(1.5);
+}.footer
+{
+  width: 60%;
+  height: 140vh;
+  margin: auto;
+  margin-top: 20px;
+  background:#2f3640;
+  text-align: center;
+}
+
+.te 
+{
+  color: white;
+  position: relative;
+  font-size: 120px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: arial;
+
+
+}
+.te:before
+{
+  font-family: arial;
+  content:"SHARP";
+  color: maroon;
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  transition: 0.9s;
+
+}
+
+.te:hover:before
+{
+  width: 100%;
+  transform: scale(1.2);
+}
+.cont{
+  width: 80%;
+  margin-left: 100px;
+  text-align: center;
+  height: 135vh;
+  background: #353b48;
+}
+.heading
+{
+  margin-top: 20px;
+}
+.heading span
+{
+  margin-top: 50px;
+  font-size: 80px;
+  font-weight: 700;
+  font-family: monospace;
+  letter-spacing: 2px;
+  color: white;
+}
+.end
+{
+  height: 80vh;
+  width: 82%;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+.texx
+{
+  text-align: center;
+  font-size: 23px;
+  justify-content:center;
+  margin:2px;
+  font-family: Arial Black;
+}
+.header1
+{
+  width: 100%;
+  height: 10vh;
+  margin: auto;
+  margin-top: 10%;
+  background:#000;
+  text-align: center;
+}
+.texxt 
+{
+  color: white;
+  position: relative;
+  font-size: 120px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  font-family: 'Century Gothic',sans-serif;
+
+
+}
+ .box{   
+    position: relative;
+  width: 400px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 10%;
+  margin-left: 35%;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+  display: inline-block;
+}
+.box1{   
+    position: relative;
+  width: 400px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 2%;
+  margin-left: 15%;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+  display: inline-block;
+}
+.two
+{
+    text-align: center;
+    display: inline-block;
+    margin-left: 5%;
+}
+.box-img{
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+}
+.box h1{
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.box h5{
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+.box p{
+  text-align: center;
+}
+.socialmedia a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #333;
+    background-color: #b8e994;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0 6px;
+    font-size: 18px;
+    transition: .3s linear;
+}
+
+.socialmedia a:hover{
+    color: #000;
+    background-color: transparent;
+    transform: scale(1.5);
+}
+/* The footer is fixed to the bottom of the page */
+ 
+footer{
+
+
+  bottom: 0;
+}
+ 
+@media (max-height:800px){
+  footer { position: static; }
+  header { padding-top:40px; }
+}
+ 
+ 
+.footer-distributed{
+    background-color: #2c292f;
+    box-sizing: border-box;
+
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 210px;
+    position: unset;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+ 
+/* Footer left */
+ 
+.footer-distributed .footer-left{
+  width: 30%;
+}
+ 
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+ 
+/* The company logo */
+ 
+.footer-distributed .footer-left img{
+  width: 30%;
+}
+ 
+.footer-distributed h3 span{
+  color:  #e0ac1c;
+}
+ 
+/* Footer links */
+ 
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+}
+ 
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+ 
+/* Footer Center */
+ 
+.footer-distributed .footer-center{
+  width: 35%;
+}
+ 
+ 
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+  color:  #e0ac1c;
+  text-decoration: none;;
+}
+ 
+ 
+/* Footer Right */
+ 
+.footer-distributed .footer-right{
+  width: 30%;
+}
+ 
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+ 
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+ 
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+ 
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+ 
+ 
+@media (max-width: 880px) {
+ 
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+ 
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+ 
+}
+
+
